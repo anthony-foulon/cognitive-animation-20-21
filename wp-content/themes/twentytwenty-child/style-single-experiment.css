@@ -1,0 +1,79 @@
+/*
+ Theme Name:   Twenty Twenty Child
+ Theme URI:    https://39281.peda.univ-lille.fr/SCE2021/TD02nov2020/public_html/wp-content/twentytwenty-child
+ Description:  Twenty Twenty Child Theme
+ Author:       anthonyf
+ Author URI:   http://example.com
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyfifteenchild
+*/
+
+html,body{
+    height: 100%;
+}
+
+#post-experiment{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    background: white;
+    transition: 1s;
+    padding-bottom: 5%;
+}
+#post{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    padding: 5%;
+    background: #D3D3D3;
+    position: relative;
+    border-radius: 9px;
+    padding-bottom: 0;
+    margin-top: 2%
+}
+#post div{
+    height: auto;
+}
+#make-an-appointment,#appointment{
+    display: none;
+}
+#more-information{
+    display: flex;
+    flex-direction: column;
+}
+#read-more{
+    display: flex;
+    justify-content: flex-end;
+    bottom: 10%;
+    right: 5%;
+    padding: 5%;
+    background: none;
+    border-radius: 9px;
+    z-index: 2;
+    color: #D1A068;
+}
+#make-an-appointment{
+    display: none;
+    justify-content: center;
+    width: 90vw;
+    align-self: center;
+    background: #D1A068;
+    color: black;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+#calendar-experiment{
+    display: flex;
+    background: white;
+    justify-content: center;
+    padding-bottom: 2%
+}
+.medium{
+    color: black;
+}

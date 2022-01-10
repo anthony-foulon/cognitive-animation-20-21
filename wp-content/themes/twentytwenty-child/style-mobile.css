@@ -1,0 +1,307 @@
+/*
+ Theme Name:   Twenty Twenty Child
+ Theme URI:    https://39281.peda.univ-lille.fr/SCE2021/TD02nov2020/public_html/wp-content/twentytwenty-child
+ Description:  Twenty Twenty Child Theme
+ Author:       anthonyf
+ Author URI:   http://example.com
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyfifteenchild
+*/
+
+@media only screen and (max-width: 600px) {
+
+body{
+    position: relative;
+    top: 10%;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    padding-right: 2%;
+}
+
+.menu-btn{
+    height: 6px;
+}
+.menu-btn-burger{
+    width: 2.6rem;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn-burger::before,.menu-btn-burger::after{
+    display: flex;
+    content: '';
+    width: 2.6rem;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+
+}
+.menu-btn-burger::before{
+    transform: translateY(-16px);
+}
+.menu-btn-burger::after{
+    transform: translateY(16px);
+}
+.toggle-text,.svg-icon{
+    color: white;
+}
+
+.header-navigation-wrapper{
+    width: 100%;
+    display: none;
+    justify-content: flex-end;
+}
+#site-content{
+    position: relative;
+    z-index: -2;
+}
+
+.menu-modal-inner{
+    background: #666666;
+}
+
+.header-titles-wrapper{
+    padding: 0;
+    width: 100%;
+}
+.has-text-align-center{
+    height: 100vh;
+    background: #666666;
+    display: flex;
+    align-content: center;
+}
+
+#introduction{
+    background: #D3D3D3;
+    padding: 2%;
+    border-radius: 9px;
+    width: 80%;
+}
+.medium h1{
+    margin-bottom: 10%;
+}
+
+#ethical{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 0;
+    align-items: center;
+    padding-top: 1%;
+
+}
+#ethical-presentation{
+    background: #333333;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    height: auto;
+    width: 100%;
+}
+#ethical-presentation div{
+    padding-top: 10%;
+    width: 100%;
+}
+#ethical-presentation h2{
+    margin-left: 0;
+}
+#ethical-presentation h3{
+    margin-left: 0;
+}
+#message{
+    background: #D3D3D3;
+    height: auto;
+    width: 70%;
+    position: inherit;
+    bottom: auto;
+    left: auto;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    height: auto;
+    width: 100%;
+}
+#message div{
+    padding-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+.more-info:hover{
+    cursor: pointer;
+}
+#domain{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: white;
+    padding-top: 0;
+    padding-bottom: 15%;
+}
+.field-content>*{
+    flex: 0 0 100%;
+}
+.field h3 a{
+    color: black;
+}
+
+
+#experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #666666;
+    margin: 0;
+    padding: 5%;
+}
+#experience div{
+    width: 90%;
+    margin-bottom: 5%;
+    margin-left: 0;
+}
+#experience h3{
+    color: white;
+}
+
+#block-experiment{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+.first-page-experiment{
+    display: none;
+    flex-direction: column;
+    background: #D3D3D3;
+    width: 100%!important;
+    margin-left: 0;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+  background: rgb(51,51,51,0.3)
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Fading animation */
+.first-page-experiment {
+  -webkit-animation-name: first-page-experiment;
+  -webkit-animation-duration: 1.5s;
+  animation-name: first-page-experiment;
+  animation-duration: 0s;
+}
+@-webkit-keyframes first-page-experiment {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes first-page-experiment {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.dot{
+    display: inline-block;
+}
+
+
+
+.first-page-experiment h4{
+    margin: 0;
+
+}
+.first-page-experiment a{
+    color: black;
+
+}
+.image-exp{
+    width: 100% !important;
+    height: auto;
+    max-width: none;
+}
+.image-exp img{
+    width: 100%;
+    height: auto;
+}
+
+#site-footer{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background: #D3D3D3;
+    z-index: 1;
+    bottom: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#footer-mobile{
+    display: flex;
+    flex-direction: column;
+}
+.footer-list{
+    background: #333333;
+    margin-bottom: 2px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+
+}
+.footer-list div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-list div i{
+    padding: 4%;
+}
+#social-network{
+    display: none;
+}
+#footer-desktop{
+    display: none;
+}
+
+#network{
+    display: flex;
+    flex-direction: column;
+}
+
+}

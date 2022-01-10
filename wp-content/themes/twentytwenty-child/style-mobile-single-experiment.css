@@ -1,0 +1,90 @@
+/*
+ Theme Name:   Twenty Twenty Child
+ Theme URI:    https://39281.peda.univ-lille.fr/SCE2021/TD02nov2020/public_html/wp-content/twentytwenty-child
+ Description:  Twenty Twenty Child Theme
+ Author:       anthonyf
+ Author URI:   http://example.com
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyfifteenchild
+*/
+
+@media only screen and (max-width: 600px) {
+
+    html,body{
+        height: 100%;
+    }
+
+    #post-experiment{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        background: white;
+        transition: 1s;
+    }
+    #post{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        margin: 5%;
+        padding: 5%;
+        background: #D3D3D3;
+        position: relative;
+        border-radius: 9px;
+    }
+    #post div{
+        height: auto;
+    }
+    #read-more{
+        display: flex;
+        justify-content: flex-end;
+        bottom: 10%;
+        right: 5%;
+        padding: 5%;
+        background: none;
+        border-radius: 9px;
+        z-index: 2;
+        color: #D1A068;
+    }
+    #more-information{
+        display: none ;
+        flex-direction: column;
+
+
+    }
+    #make-an-appointment{
+        display: none;
+        justify-content: center;
+        width: 90vw;
+        align-self: center;
+        background: #D1A068;
+        color: black;
+    }
+    #calendar-experiment{
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        background: white;
+        transition: 1s;
+    }
+    #appointment{
+        display: none;
+        height: auto;
+        width: 90%;
+        justify-content: center;
+        background: white;
+        transition: 1s;
+        margin-bottom: 10%;
+    }
+    .yui3-button {
+    margin:10px 0px 10px 0px;
+    color: #fff;
+    background-color: #3476b7;
+}
+}
